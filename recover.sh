@@ -15,9 +15,9 @@ cp theme.json $HOME/.ohmyposh/themes/theme.json
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/clarketm/zsh-completions.git
-mv zsh-syntax-highlighting/* $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-mv zsh-autosuggestions/* $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-mv zsh-completions/* $HOME/.oh-my-zsh/custom/plugins/zsh-completions
+mkdir $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting && mv zsh-syntax-highlighting/* $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+mkdir $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions && mv zsh-autosuggestions/* $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+mkdir $HOME/.oh-my-zsh/custom/plugins/zsh-completions && mv zsh-completions/* $HOME/.oh-my-zsh/custom/plugins/zsh-completions
 
 # Copy zshrc
 cp .zshrc $HOME/.zshrc
