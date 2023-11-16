@@ -1,4 +1,4 @@
-sudo pacman -S wget unzip zsh
+sudo pacman -S wget unzip zsh python --noconfirm
 
 # oh my posh
 curl -s https://ohmyposh.dev/install.sh | sudo bash -s
