@@ -10,12 +10,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chsh -s /usr/bin/zsh
 
 # install plugins
-cd $HOME/.oh-my-zsh/custom/plugins/
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/clarketm/zsh-completions.git
+cd $HOME/.oh-my-zsh/custom/plugins/ && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+cd $HOME/.oh-my-zsh/custom/plugins/&& git clone https://github.com/zsh-users/zsh-autosuggestions.git
+cd $HOME/.oh-my-zsh/custom/plugins/&& git clone https://github.com/clarketm/zsh-completions.git
 
 # Get theme
+mkdir $HOME/.ohmyposh/
+mkdir $HOME/.ohmyposh/themes/
 cp theme.json $HOME/.ohmyposh/themes/theme.json
 
 # Copy zshrc
